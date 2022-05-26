@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discussion</title>
+    <meta name="description" content="Discussion" />
+    <meta name="author" content="Rosa Tamarindus" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="data:,">
+  </head>
+  <body class="antialiased text-slate-500 bg-white">
+    <main class="flex flex-col">
+      <div class="container max-w-[85%] mx-auto">
+        <h1 class="text-slate-900 font-extrabold text-2xl sm:text-3xl lg:text-4xl tracking-tight text-center py-10">Discussion</h1>
+        <div class="relative mt-5 md:mt-2">
+          <form action="#" method="POST" id="form-main-comment">
+            <div class="flex justify-center">
+              <div class="flex flex-row sm:overflow-hidden items-center min-w-[70%]">
+                <div class="aspect-square">
+                  <img class="rounded-full object-cover" src="https://randomuser.me/api/portraits/women/17.jpg" alt="Photo user" width="45" height="45"/>
+                </div>
+                <div class="flex ml-2 w-full">
+                  <div class="mr-2 min-w-[87.5%]">
+                    <textarea id="input-main-comment" name="comment" rows="1"
+                    class="resize-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border border-gray-300 rounded-md align-middle min-w-full p-2"
+                    placeholder="What are your thoughts?"></textarea>
+                  </div>
+                  <button id="btn-submit-main-comment" type="submit" class="bg-indigo-500 rounded-md p-2">
+                    <p class="text-white">Comment</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="relative my-5 md:my-12">
+          <div class="flex justify-center">
+            <div id="comments--container" class="flex flex-col border-t border-slate-200 max-w-[70%] pt-8"></div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
