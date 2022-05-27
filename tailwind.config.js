@@ -1,25 +1,9 @@
 module.exports = {
-  content: ["./src/*.{html,js}"],
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
   theme: {
     extend: {},
   },
   plugins: [],
 }
-// module.exports = {
-//   purge: {
-//     enabled: true,
-//     content: ["src/*.html"],
-//   },
-//   darkMode: false, // or 'media' or 'class'
-//   theme: {
-//     extend: {
-//       colors: {
-//         'ghost-task': "#F89283"
-//       }
-//     },
-//   },
-//   variants: {
-//     extend: {},
-//   },
-//   plugins: [],
-// }
