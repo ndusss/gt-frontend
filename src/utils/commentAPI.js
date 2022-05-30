@@ -28,3 +28,14 @@ export const postComment = async (newCommentObj) => {
   .then(res => res)
   .catch(error => console.error('Err: ', error))
 }
+
+export const updateUpvoteById = async (commentId) => {
+  await fetch(`${API_URL}/comment/${commentId}`, {
+    method: "PUT",
+    headers: {
+      "Content-type": "application/json; charset=UTF-8",
+    },
+  })
+  .then(res => res)
+  .catch(error => console.error("Err: ", error))
+}
