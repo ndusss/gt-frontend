@@ -121,8 +121,6 @@ function App() {
     }
   }, [showSucceedPost]);
 
-  console.log(commenterData);
-
   return (
     <div className="App">
       <main className="flex flex-col">
